@@ -16,7 +16,7 @@ Chuẩn bị hồ sơ launch v0 cho trợ lý hoàn phí LogiX-VN để hội đ
 
 - **A · Mô hình chi phí** (`src/lab13.py`, [bang_chi_phi.md](bang_chi_phi.md)): tử số tính mọi lần chạy kể cả lần lỗi, mẫu số chỉ đếm `thanh_cong`; tách theo `loai`; cộng cố định 40 tr đ/tháng cho phạm vi noi_dia + hang_nang.
 - **B · Độ nhạy** ([bang_chi_phi.md](bang_chi_phi.md)): 9 kịch bản đổi từng yếu tố, một cặp, giới hạn 1/2/3 lần chạy, xem lại 100%.
-- **C · Bảng lỗi** ([bang_loi.md](bang_loi.md), [nhan_bo_2_Phuong.md](nhan_bo_2_Phuong.md)): hai người gắn nhãn độc lập 20 ca theo 5 loại Google PAIR, ghép và tính đồng thuận, bảng khắc phục 5 loại.
+- **C · Bảng lỗi** ([bang_loi.md](bang_loi.md), [nhan_bo_2_Phuong.md](nhan_bo_2_Phuong.md)): hai người gắn nhãn độc lập 20 ca theo 5 loại Google PAIR, đồng thuận 20/20 = 100%, bảng khắc phục 5 loại.
 - **D · Pilot** ([pilot_plan.yaml](pilot_plan.yaml)): tính cỡ mẫu theo yêu cầu / nhân viên / depot trước khi chọn cách chia; chọn chia theo nhân viên 20 + 20.
 - **E · Chỉ số, rủi ro, hồ sơ** ([chi_so.md](chi_so.md), [ho_so_launch_v0.md](ho_so_launch_v0.md)): 3 chỉ số tính thử + 2 tự đề xuất, 10 event có `trace_id`, 4 dòng rủi ro, hồ sơ 7 mục.
 

@@ -33,4 +33,4 @@
 ## 6. Tự đánh giá
 
 - Hồ sơ đủ 7 mục, đề xuất khớp số của nhóm và nêu con số bất lợi.
-- Cần cải thiện: mục 5 còn chờ đồng thuận từ `bang_loi.md`; cần cập nhật ngay khi người gắn nhãn 1 push.
+- Nhãn bộ 2 khớp bộ 1 cả 20/20 ca (100%).
