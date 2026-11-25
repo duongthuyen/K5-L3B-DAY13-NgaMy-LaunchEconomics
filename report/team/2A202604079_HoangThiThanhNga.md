@@ -4,7 +4,7 @@
 
 - Họ tên: Hoàng Thị Thanh Nga
 - MSSV: 2A202604079
-- Email:
+- Email: hoangthanhnga2005@gmail.com
 - Vai trong nhóm: người gắn nhãn 1, chủ `bang_loi.md` (CP3) → kiểm tra chéo và chủ trì `phieu_cham.md`
 
 ## 2. Phần việc phụ trách
@@ -16,6 +16,7 @@
 ## 3. Đóng góp cụ thể
 
 - Chép 20 ca từ `docs/Ngay13_Lab13_De_bai_hoc_vien.docx` vào `bang_loi.md`. Gắn nhãn bộ 1 theo nguyên nhân gốc: Do người dùng 4 (ca 1, 6, 9, 14) · Hệ thống 5 (2, 7, 8, 15, 20) · Ngữ cảnh 4 (3, 10, 16, 18) · Giới hạn hệ thống 4 (4, 11, 13, 19) · Ngầm 3 (5, 12, 17).
+- Ghép nhãn bộ 2 (TV4): trùng 20/20 = 100%.
 - Viết trước quy tắc phân biệt cho các ca dễ lệch (6/9, 13, 8, 2 với 12/17, 18).
 - Bảng khắc phục 5 ca đủ năm loại (9, 7, 18, 11, 17). Mỗi ca có event hoặc phép đối soát, ngưỡng và tần suất, và một vai phụ trách.
 - Kết quả kiểm tra chéo (đã báo cho chủ file):
@@ -36,4 +37,5 @@
 ## 6. Tự đánh giá
 
 - Xong phần khung, nhãn bộ 1, bảng khắc phục và kiểm tra chéo.
-- Còn chờ: ghép nhãn bộ 2 của TV4 để tính tỉ lệ đồng thuận (cần ≥ 16/20), và hồ sơ của nhóm n + 1 để điền `phieu_cham.md`.
+- Đã ghép nhãn bộ 2 của TV4: đồng thuận 20/20 = 100%.
+- Còn chờ: hồ sơ của nhóm n + 1 để điền `phieu_cham.md`.

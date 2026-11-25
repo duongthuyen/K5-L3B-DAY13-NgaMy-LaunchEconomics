@@ -152,7 +152,7 @@ Ví dụ: `report/team/20241234_NguyenVanAn.md`.
 
 ### Đóng góp cụ thể
 
-- Chép 20 ca và gắn nhãn bộ 1: Do người dùng 4 · Hệ thống 5 · Ngữ cảnh 4 · Giới hạn hệ thống 4 · Ngầm 3. Viết quy tắc phân biệt cho các ca dễ lệch.
+- Chép 20 ca và gắn nhãn bộ 1: Do người dùng 4 · Hệ thống 5 · Ngữ cảnh 4 · Giới hạn hệ thống 4 · Ngầm 3. Ghép nhãn bộ 2 của TV4: đồng thuận 20/20 = 100%. Viết quy tắc phân biệt cho các ca dễ lệch.
 - Bảng khắc phục 5 ca (9, 7, 18, 11, 17) đủ năm loại, mỗi ca có cách phát hiện đo được và một vai phụ trách.
 - Kiểm tra chéo: `lab13.py` ĐẠT (cần cài `statsmodels`); YAML hợp lệ (trên Windows cần `PYTHONUTF8=1`), không còn `?`; `grep production` có 1 dòng trong báo cáo của TV2, đã báo chủ file.
 

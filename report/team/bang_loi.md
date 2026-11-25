@@ -8,36 +8,36 @@ Người gắn nhãn 1: Hoàng Thị Thanh Nga (TV3) · Người gắn nhãn 2: 
 
 | Ca | Nhãn người 1 | Nhãn người 2 | Trùng? | Nhãn thống nhất |
 | --: | --- | --- | --- | --- |
-| 1 | Do người dùng | _(chờ TV4)_ | _(chờ)_ | _(chờ)_ |
-| 2 | Hệ thống | _(chờ TV4)_ | _(chờ)_ | _(chờ)_ |
-| 3 | Ngữ cảnh | _(chờ TV4)_ | _(chờ)_ | _(chờ)_ |
-| 4 | Giới hạn hệ thống | _(chờ TV4)_ | _(chờ)_ | _(chờ)_ |
-| 5 | Ngầm | _(chờ TV4)_ | _(chờ)_ | _(chờ)_ |
-| 6 | Do người dùng | _(chờ TV4)_ | _(chờ)_ | _(chờ)_ |
-| 7 | Hệ thống | _(chờ TV4)_ | _(chờ)_ | _(chờ)_ |
-| 8 | Hệ thống | _(chờ TV4)_ | _(chờ)_ | _(chờ)_ |
-| 9 | Do người dùng | _(chờ TV4)_ | _(chờ)_ | _(chờ)_ |
-| 10 | Ngữ cảnh | _(chờ TV4)_ | _(chờ)_ | _(chờ)_ |
-| 11 | Giới hạn hệ thống | _(chờ TV4)_ | _(chờ)_ | _(chờ)_ |
-| 12 | Ngầm | _(chờ TV4)_ | _(chờ)_ | _(chờ)_ |
-| 13 | Giới hạn hệ thống | _(chờ TV4)_ | _(chờ)_ | _(chờ)_ |
-| 14 | Do người dùng | _(chờ TV4)_ | _(chờ)_ | _(chờ)_ |
-| 15 | Hệ thống | _(chờ TV4)_ | _(chờ)_ | _(chờ)_ |
-| 16 | Ngữ cảnh | _(chờ TV4)_ | _(chờ)_ | _(chờ)_ |
-| 17 | Ngầm | _(chờ TV4)_ | _(chờ)_ | _(chờ)_ |
-| 18 | Ngữ cảnh | _(chờ TV4)_ | _(chờ)_ | _(chờ)_ |
-| 19 | Giới hạn hệ thống | _(chờ TV4)_ | _(chờ)_ | _(chờ)_ |
-| 20 | Hệ thống | _(chờ TV4)_ | _(chờ)_ | _(chờ)_ |
+| 1 | Do người dùng | Do người dùng | Có | Do người dùng |
+| 2 | Hệ thống | Hệ thống | Có | Hệ thống |
+| 3 | Ngữ cảnh | Ngữ cảnh | Có | Ngữ cảnh |
+| 4 | Giới hạn hệ thống | Giới hạn hệ thống | Có | Giới hạn hệ thống |
+| 5 | Ngầm | Ngầm | Có | Ngầm |
+| 6 | Do người dùng | Do người dùng | Có | Do người dùng |
+| 7 | Hệ thống | Hệ thống | Có | Hệ thống |
+| 8 | Hệ thống | Hệ thống | Có | Hệ thống |
+| 9 | Do người dùng | Do người dùng | Có | Do người dùng |
+| 10 | Ngữ cảnh | Ngữ cảnh | Có | Ngữ cảnh |
+| 11 | Giới hạn hệ thống | Giới hạn hệ thống | Có | Giới hạn hệ thống |
+| 12 | Ngầm | Ngầm | Có | Ngầm |
+| 13 | Giới hạn hệ thống | Giới hạn hệ thống | Có | Giới hạn hệ thống |
+| 14 | Do người dùng | Do người dùng | Có | Do người dùng |
+| 15 | Hệ thống | Hệ thống | Có | Hệ thống |
+| 16 | Ngữ cảnh | Ngữ cảnh | Có | Ngữ cảnh |
+| 17 | Ngầm | Ngầm | Có | Ngầm |
+| 18 | Ngữ cảnh | Ngữ cảnh | Có | Ngữ cảnh |
+| 19 | Giới hạn hệ thống | Giới hạn hệ thống | Có | Giới hạn hệ thống |
+| 20 | Hệ thống | Hệ thống | Có | Hệ thống |
 
-**Tỉ lệ đồng thuận:** _(tính sau khi ghép nhãn bộ 2 của TV4)_ ... / 20 = ...%
+**Tỉ lệ đồng thuận:** 20 / 20 = 100% (≥ 80%, không cần viết lại định nghĩa). Nhãn bộ 2 lấy từ [nhan_bo_2_Phuong.md](nhan_bo_2_Phuong.md).
 
-Phân bố nhãn bộ 1: Do người dùng 4 · Hệ thống 5 · Ngữ cảnh 4 · Giới hạn hệ thống 4 · Ngầm 3.
+Phân bố nhãn (cả hai bộ giống nhau): Do người dùng 4 · Hệ thống 5 · Ngữ cảnh 4 · Giới hạn hệ thống 4 · Ngầm 3.
 
 ## Quy tắc phân biệt cho các ca không trùng
 
 Mỗi ca không trùng một câu. Đồng thuận dưới 80% thì ghi định nghĩa đã viết lại.
 
-- _(điền sau khi so với bộ 2)_. Quy tắc dự kiến cho các ca dễ lệch:
+- Không có ca không trùng. Cả hai người đều phân vân ở ca 8, 9, 13 nên nhóm vẫn ghi quy tắc cho các ca dễ lệch, để dùng khi gắn nhãn ca mới:
 - Ca 9 (mã sàn TMĐT) và ca 6 (chọn sai mục): nguyên nhân gốc là đầu vào sai của khách → **Do người dùng**; việc trợ lý không gợi ý là chỗ cần sửa, không phải nguyên nhân.
 - Ca 13 (bảo hiểm đối tác): yêu cầu ngoài phạm vi → **Giới hạn hệ thống**; trả lời chung chung là cách thể hiện giới hạn kém.
 - Ca 8 (dẫn điều 7.2 không tồn tại): trả lời sai so với chính sách và đã bị phát hiện → **Hệ thống**, không phải Ngầm.
