@@ -182,3 +182,63 @@ if __name__ == '__main__':
     # TODO CP4 · Nhiệm vụ D: cỡ mẫu.
     #   from statsmodels.stats.proportion import proportion_effectsize
     #   from statsmodels.stats.power import NormalIndPower
+    from statistics import NormalDist
+    from statsmodels.stats.proportion import proportion_effectsize
+    from statsmodels.stats.power import NormalIndPower
+
+    P1, ALPHA, POWER, ICC = 0.70, 0.05, 0.80, 0.02
+
+    def co_mau(p1, p2, alpha=ALPHA, power=POWER):
+        """Cỡ mẫu mỗi nhóm để so hai tỉ lệ (công thức hai tỉ lệ độc lập)."""
+        za, zb = NormalDist().inv_cdf(1 - alpha / 2), NormalDist().inv_cdf(power)
+        pb = (p1 + p2) / 2
+        return math.ceil((za * math.sqrt(2 * pb * (1 - pb))
+                          + zb * math.sqrt(p1 * (1 - p1) + p2 * (1 - p2))) ** 2 / (p2 - p1) ** 2)
+
+    def he_so_thiet_ke(m, icc=ICC):
+        return 1 + (m - 1) * icc
+
+    n5 = co_mau(P1, P1 + 0.05)
+    n6 = co_mau(P1, P1 + 0.06)
+    so_nv = reqs['staff_id'].nunique()
+    so_depot = reqs['depot'].nunique()
+
+    # a) chia theo yêu cầu
+    print(f'\nD1 · Cỡ mẫu (baseline {P1}, alpha {ALPHA}, power {POWER}, ICC {ICC}); '
+          f'dữ liệu có {so_nv} nhân viên, {so_depot} depot')
+    print(f'a) Theo yêu cầu, +5 điểm: {n5:,} yêu cầu mỗi nhóm')
+    # b) theo nhân viên, m = 75
+    de75 = he_so_thiet_ke(75)
+    n_b = math.ceil(n5 * de75)
+    nv_b = math.ceil(n_b / 75)
+    print(f'b) Theo nhân viên, m = 75: DE {de75:.2f} → {n_b:,} mỗi nhóm = {nv_b} người mỗi nhóm, '
+          f'tổng {2 * nv_b} > 40: không đủ người')
+    # c) 20 nhân viên mỗi nhóm: n hiệu dụng < c / ICC dù m lớn tới đâu
+    tran_c = 20 / ICC
+    print(f'c) 20 nhân viên mỗi nhóm: n hiệu dụng tối đa {tran_c:,.0f} < {n5:,}: '
+          f'{"đạt" if tran_c >= n5 else "không đạt"}')
+    # d) 6 depot mỗi nhóm
+    tran_d = 6 / ICC
+    print(f'd) 6 depot mỗi nhóm: n hiệu dụng tối đa {tran_d:,.0f} < {n5:,}: không đạt, và chỉ 6 cụm (< 20)')
+    # e) mức chênh 6 điểm, 20 nhân viên mỗi nhóm: 20m / (1 + (m-1) ICC) >= n6
+    m_e = math.ceil(n6 * (1 - ICC) / (20 - n6 * ICC))
+    print(f'e) +6 điểm: {n6:,} mỗi nhóm; 20 nhân viên mỗi nhóm cần m ≥ {m_e} yêu cầu mỗi người '
+          f'(DE {he_so_thiet_ke(m_e):.2f}, n hiệu dụng {20 * m_e / he_so_thiet_ke(m_e):,.0f})')
+
+    # Đánh đổi: thiết kế cho +6 điểm, nếu tác động thật chỉ +5 điểm thì power còn bao nhiêu
+    es5 = abs(proportion_effectsize(P1 + 0.05, P1))
+    power_5_tai_n6 = NormalIndPower().power(effect_size=es5, nobs1=n6, alpha=ALPHA, ratio=1)
+    print(f'   Đánh đổi: với n hiệu dụng {n6:,} mỗi nhóm, nếu tác động thật chỉ +5 điểm thì power ≈ {power_5_tai_n6:.2f}')
+
+    # Thời gian để mỗi nhân viên đạt m_e yêu cầu trong phạm vi (1.500 yc/ngày, 40 người)
+    ti_le_pv = len(pham_vi) / len(reqs)
+    yc_pv_moi_nguoi_ngay = 1500 / 40 * ti_le_pv
+    ngay_can = math.ceil(m_e / yc_pv_moi_nguoi_ngay)
+    print(f'   Phạm vi chiếm {ti_le_pv:.1%} yêu cầu → {yc_pv_moi_nguoi_ngay:.1f} yc/người/ngày; '
+          f'cần ≈ {ngay_can} ngày làm việc để mỗi người đạt {m_e} yc')
+
+    # Tỉ lệ mở lại 7 ngày hiện tại (đặt luật an toàn)
+    mo_lai_all = reqs['mo_lai_trong_7_ngay'].mean()
+    mo_lai_pv = pham_vi['mo_lai_trong_7_ngay'].mean()
+    print(f'D3 · Mở lại 7 ngày hiện tại: {mo_lai_all:.2%} ({int(reqs["mo_lai_trong_7_ngay"].sum())}/{len(reqs)}); '
+          f'trong phạm vi {mo_lai_pv:.2%} ({int(pham_vi["mo_lai_trong_7_ngay"].sum())}/{len(pham_vi)})')
