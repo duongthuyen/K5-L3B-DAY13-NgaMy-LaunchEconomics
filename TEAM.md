@@ -12,8 +12,8 @@
 | STT | Họ tên | MSSV | Email | GitHub | Vai trò |
 | --: | ------ | ---- | ----- | ------ | ------- |
 |   1 | Dương Thị Huyền | 2A202604077 |       | duongthuyen | Người viết code 1 (CP1–CP2) → sau giải lao: phụ trách `chi_so.md` (CP5) |
-|   2 | Tâm |      |       | | Người kiểm số (CP1–CP2) → sau giải lao: Người viết code 2 (CP4, `pilot_plan.yaml`) |
-|   3 | Nga |      |       | | Người gắn nhãn 1, chủ `bang_loi.md` (CP3) → kiểm tra chéo & `phieu_cham.md` |
+|   2 | Phạm Minh Tâm | 2A202604097 | minhtama11qc@gmail.com | minhtama11qc-hash | Người kiểm số (CP1–CP2) → sau giải lao: Người viết code 2 (CP4, `pilot_plan.yaml`) |
+|   3 | Hoàng Thị Thanh Nga | 2A202604079 |       | Ngahoang2005 | Người gắn nhãn 1, chủ `bang_loi.md` (CP3) → kiểm tra chéo & `phieu_cham.md` |
 |   4 | Phương |      |       | | Người gắn nhãn 2, kiêm giữ hồ sơ `ho_so_launch_v0.md`, `group_report.md`, push bản chốt |
 
 Bốn vai của lab:
@@ -127,7 +127,7 @@ Ví dụ: `report/team/20241234_NguyenVanAn.md`.
 
 - Output `cd src && python lab13.py`; các commit sửa `src/lab13.py` và `report/team/chi_so.md`.
 
-## Tâm-MSSV
+## PhamMinhTam-2A202604097
 
 ### Phần việc phụ trách
 
@@ -135,13 +135,16 @@ Ví dụ: `report/team/20241234_NguyenVanAn.md`.
 
 ### Đóng góp cụ thể
 
--
+- Kiểm số và điền `bang_chi_phi.md`: A1 (1,20 · 1,25 · 1,25), A2 4.472 đ = 16,3× hoá đơn [simulated], A3–A4, B1–B4; kiểm "giảm một nửa = nửa mức tăng của gấp đôi" và B2 cộng tuyến tính (+46,3%).
+- Viết `TODO CP4`: năm câu D1 (1.251 · m = 75 cần 84 người · tối đa 1.000 · tối đa 300 · m ≥ 299 với DE 6,96), power 0,64 nếu tác động thật chỉ 5 điểm, tỉ lệ mở lại 4,25%.
+- Viết `pilot_plan.yaml`: chia theo nhân viên 20 + 20, mức chênh 6 điểm có ghi đánh đổi, phạm vi `noi_dia` + `hang_nang`, 4 luật dừng NẾU – TRONG – THÌ – KHÔNG THÌ.
 
 ### Bằng chứng
 
--
+- Commit `33d367d` (`bang_chi_phi.md`) và `4ddece2` (`lab13.py` CP4, `pilot_plan.yaml`); output `cd src && python lab13.py` phần D1; lệnh kiểm `yaml.safe_load` chạy không lỗi.
+- Báo cáo cá nhân: `report/team/2A202604097_PhamMinhTam.md`.
 
-## Nga-MSSV
+## HoangThiThanhNga-2A202604079
 
 ### Phần việc phụ trách
 
@@ -149,11 +152,13 @@ Ví dụ: `report/team/20241234_NguyenVanAn.md`.
 
 ### Đóng góp cụ thể
 
--
+- Chép 20 ca và gắn nhãn bộ 1: Do người dùng 4 · Hệ thống 5 · Ngữ cảnh 4 · Giới hạn hệ thống 4 · Ngầm 3. Viết quy tắc phân biệt cho các ca dễ lệch.
+- Bảng khắc phục 5 ca (9, 7, 18, 11, 17) đủ năm loại, mỗi ca có cách phát hiện đo được và một vai phụ trách.
+- Kiểm tra chéo: `lab13.py` ĐẠT (cần cài `statsmodels`); YAML hợp lệ (trên Windows cần `PYTHONUTF8=1`), không còn `?`; `grep production` có 1 dòng trong báo cáo của TV2, đã báo chủ file.
 
 ### Bằng chứng
 
--
+- `report/team/bang_loi.md`; báo cáo cá nhân `report/team/2A202604079_HoangThiThanhNga.md`.
 
 ## Phương-MSSV
 
