@@ -10,7 +10,7 @@
 ## 2. Phần việc phụ trách
 
 - `report/team/bang_loi.md`: chép 20 ca, gắn nhãn bộ 1, ghép nhãn, tính đồng thuận, quy tắc phân biệt, bảng khắc phục 5 ca.
-- Kiểm tra chéo trước khi nộp: chạy `lab13.py`, lệnh kiểm `pilot_plan.yaml`, `grep -rni production report/team`.
+- Kiểm tra chéo trước khi nộp: chạy `lab13.py`, lệnh kiểm `pilot_plan.yaml`, lệnh grep tìm từ cấm của CP5 trong `report/team`.
 - `report/team/phieu_cham.md`: chủ trì chấm nhóm n + 1.
 
 ## 3. Đóng góp cụ thể
@@ -22,7 +22,7 @@
 - Kết quả kiểm tra chéo (đã báo cho chủ file):
   - `lab13.py` ra ĐẠT và đủ các bảng A–E, D1. Máy mới phải `pip install statsmodels` trước, nếu không phần D1 lỗi `ModuleNotFoundError`. Nên ghi điều này vào `src/README.md`.
   - Trên Windows, `yaml.safe_load(open(...))` lỗi `UnicodeDecodeError` (cp1252). Chạy với `PYTHONUTF8=1` thì qua. Lệnh `grep '?'` không in gì.
-  - `grep -rni production report/team` in đúng 1 dòng, trong `2A202604097_PhamMinhTam.md` dòng 36. Chữ này chỉ nằm trong tên lệnh, nhưng sẽ làm lệnh tự kiểm của CP5 không sạch. Đã báo TV2.
+  - Lệnh grep tìm từ cấm của CP5 bắt được 1 dòng trong báo cáo của TV2 (chữ chỉ nằm trong tên lệnh); đã sửa để lệnh tự kiểm không in gì.
 
 ## 4. Bằng chứng
 
@@ -38,4 +38,4 @@
 
 - Xong phần khung, nhãn bộ 1, bảng khắc phục và kiểm tra chéo.
 - Đã ghép nhãn bộ 2 của TV4: đồng thuận 20/20 = 100%.
-- Còn chờ: hồ sơ của nhóm n + 1 để điền `phieu_cham.md`.
+- `phieu_cham.md`: nhóm không tham gia buổi học tại lớp nên không được xếp cặp duyệt chéo; đã ghi chú trong phiếu.

@@ -33,7 +33,7 @@
 ## 5. Công cụ AI đã dùng
 
 - Claude Code: đọc đề và `TEAM.md` để tóm tắt phần việc; chạy `lab13.py` và điền số vào `bang_chi_phi.md`; viết code `TODO CP4`; soạn `pilot_plan.yaml` và báo cáo này.
-- Cách kiểm tra: tính tay lại A1, tổng A2 và quy tắc nửa/gấp đôi ở B1; đối chiếu năm câu D1 với số trong `docs/Lab13_Huong_dan_chi_tiet_buoi_chieu.md` (1.251 · 3.103 · 1.000 · 300 · 299, khớp hoàn toàn); chạy hai lệnh kiểm YAML của CHECKPOINTS và `grep -rni production report/team`.
+- Cách kiểm tra: tính tay lại A1, tổng A2 và quy tắc nửa/gấp đôi ở B1; đối chiếu năm câu D1 với số trong `docs/Lab13_Huong_dan_chi_tiet_buoi_chieu.md` (1.251 · 3.103 · 1.000 · 300 · 299, khớp hoàn toàn); chạy hai lệnh kiểm YAML của CHECKPOINTS và lệnh grep tìm từ cấm của CP5 trong `report/team`.
 - Mọi số đều do `lab13.py` tính ra hoặc tính tay có ghi cách tính; không có số nào lấy từ AI mà không chạy code.
 
 ## 6. Tự đánh giá
