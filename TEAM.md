@@ -163,8 +163,10 @@ Ví dụ: `report/team/20241234_NguyenVanAn.md`.
 
 ### Đóng góp cụ thể
 
--
+- Gắn nhãn độc lập 20 ca (Hệ thống 5 · Do người dùng 4 · Ngữ cảnh 4 · Giới hạn 4 · Ngầm 3), gửi người gắn nhãn 1.
+- Điền hồ sơ launch v0 đủ 7 mục; đề xuất Go có điều kiện, nêu con số bất lợi (xem lại 100% = 0,98×, quoc_te 1,88× [simulated]) và 4 điều kiện có người phụ trách, ngày kiểm tra.
+- Viết `group_report.md`.
 
 ### Bằng chứng
 
--
+- `report/team/nhan_bo_2_Phuong.md`, `report/team/ho_so_launch_v0.md`, `report/team/group_report.md`, `report/team/MSSV_BuiPhuong.md`.
