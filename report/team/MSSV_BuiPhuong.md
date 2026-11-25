@@ -28,7 +28,7 @@
 ## 5. Công cụ AI đã dùng
 
 - Claude Code: soạn khung hồ sơ và group report từ các file của nhóm.
-- Tự kiểm tra: đối chiếu từng số trong hồ sơ với `bang_chi_phi.md`, `chi_so.md`, `pilot_plan.yaml`; `grep -rni production report/team` không in gì.
+- Tự kiểm tra: đối chiếu từng số trong hồ sơ với `bang_chi_phi.md`, `chi_so.md`, `pilot_plan.yaml`; lệnh grep kiểm từ cấm trong `report/team` không in gì.
 
 ## 6. Tự đánh giá
 
