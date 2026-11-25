@@ -11,7 +11,7 @@
 
 | STT | Họ tên | MSSV | Email | GitHub | Vai trò |
 | --: | ------ | ---- | ----- | ------ | ------- |
-|   1 | Huyền |      |       | duongthuyen | Người viết code 1 (CP1–CP2) → sau giải lao: phụ trách `chi_so.md` (CP5) |
+|   1 | Dương Thị Huyền | 2A202604077 |       | duongthuyen | Người viết code 1 (CP1–CP2) → sau giải lao: phụ trách `chi_so.md` (CP5) |
 |   2 | Tâm |      |       | | Người kiểm số (CP1–CP2) → sau giải lao: Người viết code 2 (CP4, `pilot_plan.yaml`) |
 |   3 | Nga |      |       | | Người gắn nhãn 1, chủ `bang_loi.md` (CP3) → kiểm tra chéo & `phieu_cham.md` |
 |   4 | Phương |      |       | | Người gắn nhãn 2, kiêm giữ hồ sơ `ho_so_launch_v0.md`, `group_report.md`, push bản chốt |
@@ -111,7 +111,7 @@ report/team/MSSV_HoTen.md
 
 Ví dụ: `report/team/20241234_NguyenVanAn.md`.
 
-## Huyền-MSSV
+## DuongThiHuyen-2A202604077
 
 ### Phần việc phụ trách
 
