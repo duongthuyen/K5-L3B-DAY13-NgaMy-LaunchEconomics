@@ -119,11 +119,13 @@ Ví dụ: `report/team/20241234_NguyenVanAn.md`.
 
 ### Đóng góp cụ thể
 
--
+- Viết ba hàm A1 (ĐẠT 1,20 · 1,25 · 1,25) và `mo_hinh`; A2 ra chi phí mỗi việc thành công 4.472 đ [simulated], gấp 16,3 lần hoá đơn chia số yêu cầu.
+- In A3 theo loại (quoc_te 1,88×, không đáng xử lý), A4 cộng cố định (4.599 đ = 0,38× ở 45.000 yc/tháng), B1–B4 (làm lại gấp đôi +51,8%; giới hạn 2 lần rẻ nhất cho cả hệ thống; xem lại 100% = 0,98×).
+- Viết `chi_so.md`: ba chỉ số tính thử (82,83% · 27,12% · 4,25%), hai chỉ số tự đề xuất, 10 event có `trace_id`, 4 dòng rủi ro kinh tế.
 
 ### Bằng chứng
 
--
+- Output `cd src && python lab13.py`; các commit sửa `src/lab13.py` và `report/team/chi_so.md`.
 
 ## Tâm-MSSV
 
