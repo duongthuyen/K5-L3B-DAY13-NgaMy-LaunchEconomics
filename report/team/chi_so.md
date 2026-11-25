@@ -40,6 +40,15 @@ Mười event, mỗi event có `trace_id` để nối với trace của agent.
 - An toàn (đề xuất): `audit_sample_checked` có so_tien_da_hoan ≠ so_tien_dung, đối chiếu với `refund_ledger_write` qua trace_id.
 - Chi phí mỗi việc thành công (dùng cho rủi ro E2): `agent_run_completed` (token, tool) + `staff_review_decision` và `staff_rework_completed` (phút thật thay cho cột simulated), chia số ticket đóng không mở lại.
 
+**Kiểm tra chéo với luật dừng trong `pilot_plan.yaml`:** cả bốn luật đều tính được từ danh sách event, tách nhóm bằng thuộc tính `arm` (chia theo `staff_id`).
+
+| Luật dừng | Ngưỡng | Event dùng để tính |
+| --- | --- | --- |
+| An toàn | Mở lại 7 ngày cao hơn đối chứng ≥ 2 điểm hoặc > 6% (hiện 3,97% trong phạm vi); ≥ 1 ca hoàn trùng tiền | `ticket_reopened`, `ticket_closed`; `refund_ledger_write` trùng `request_id` khác `idempotency_key` |
+| Chi phí | Chi phí mỗi việc thành công > 8.000 đ trong 2 tuần | `agent_run_completed`, `staff_review_decision`, `staff_rework_completed`, `ticket_closed` |
+| Mức độ sử dụng | Bỏ qua gợi ý > 40% trong 1 tuần (đợt chạy thử 27,12%) | `staff_review_decision` |
+| Thời gian xem lại | Trung bình > 5 phút trong 1 tuần (hoà vốn 5,1 phút, simulated) | `staff_review_decision` (phut_xem_lai đo thật) |
+
 ## E2 · Rủi ro kinh tế
 
 Số lấy từ bảng độ nhạy và A4 (`src/lab13.py`, `bang_chi_phi.md`); mọi tác động đều **simulated**.

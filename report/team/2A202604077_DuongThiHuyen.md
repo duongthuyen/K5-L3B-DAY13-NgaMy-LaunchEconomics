@@ -22,7 +22,8 @@
 
 ## 4. Bằng chứng
 
-- Commit `b43b0e3` (feat: CP1-CP2 trong lab13.py và chi_so.md).
+- Commit `b43b0e3` (feat: CP1-CP2 trong lab13.py và chi_so.md); commit bổ sung bảng đối chiếu luật dừng của `pilot_plan.yaml` với event trong `chi_so.md`.
+- Kiểm tra sau khi nhóm push đủ: `python lab13.py` chạy hết (A1 ĐẠT, D1 in đủ năm câu), `pilot_plan.yaml` hợp lệ và không còn `?`, `report/team` không còn từ cấm; số trong `ho_so_launch_v0.md` mục 1–4, 7 khớp output.
 - Output `cd src && python lab13.py`: in "Ba phép thử đáp án biết trước: ĐẠT", bảng A2–A4, B1–B4 và ba chỉ số E1.
 - File `src/lab13.py`, `report/team/chi_so.md`.
 
