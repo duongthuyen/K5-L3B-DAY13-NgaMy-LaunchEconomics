@@ -11,8 +11,8 @@
 
 | STT | Họ tên | MSSV | Email | GitHub | Vai trò |
 | --: | ------ | ---- | ----- | ------ | ------- |
-|   1 | Dương Thị Huyền | 2A202604077 | huyen.dt4002@gmail.com | duongthuyen | Người viết code 1 (CP1–CP2) → sau giải lao: phụ trách `chi_so.md` (CP5) |
-|   2 | Phạm Minh Tâm | 2A202604097 | minhtama11qc@gmail.com | minhtama11qc-hash | Người kiểm số (CP1–CP2) → sau giải lao: Người viết code 2 (CP4, `pilot_plan.yaml`) |
+|   1 | Dương Thị Huyền | 2A202604077 |  | duongthuyen | Người viết code 1 (CP1–CP2) → sau giải lao: phụ trách `chi_so.md` (CP5) |
+|   2 | Phạm Minh Tâm | 2A202604097 |  | minhtama11qc-hash | Người kiểm số (CP1–CP2) → sau giải lao: Người viết code 2 (CP4, `pilot_plan.yaml`) |
 |   3 | Hoàng Thị Thanh Nga | 2A202604079 |       | Ngahoang2005 | Người gắn nhãn 1, chủ `bang_loi.md` (CP3) → kiểm tra chéo & `phieu_cham.md` |
 |   4 | Bùi Phương | 2A202604080 |       | | Người gắn nhãn 2, kiêm giữ hồ sơ `ho_so_launch_v0.md`, `group_report.md`, push bản chốt |
 
