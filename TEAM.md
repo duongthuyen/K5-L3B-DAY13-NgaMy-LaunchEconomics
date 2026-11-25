@@ -5,7 +5,7 @@
 - Tên nhóm: NgaMy
 - Lớp: L3B
 - Repo nhóm: `K5-L3B-DAY13-NgaMy-LaunchEconomics` (xem [SUBMISSION.md](SUBMISSION.md))
-- URL repo, nhánh nộp, commit chốt: https://github.com/duongthuyen/K5-L3B-DAY13-NgaMy-LaunchEconomics · `main` · (điền hash commit chốt lúc nộp)
+- URL repo, nhánh nộp, commit chốt: https://github.com/duongthuyen/K5-L3B-DAY13-NgaMy-LaunchEconomics · `main` · `ad2bbaa`
 
 ## Thành viên
 
